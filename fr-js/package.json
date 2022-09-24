@@ -1,0 +1,37 @@
+{
+  "name": "fr-javascript",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.5",
+    "axios": "^0.27.2",
+    "file-saver": "^2.0.5",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.5.25",
+    "next": "12.3.1",
+    "primeicons": "^5.0.0",
+    "primereact": "^8.5.0",
+    "react": "18.2.0",
+    "react-data-table-component": "^7.5.3",
+    "react-data-table-component-extensions": "^1.6.0",
+    "react-dom": "18.2.0",
+    "react-paginate": "^8.1.3",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0",
+    "styled-components": "^5.3.5",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.11",
+    "eslint": "8.23.1",
+    "eslint-config-next": "12.3.1",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
+  }
+}

@@ -1,0 +1,55 @@
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  nav {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: #0a142f;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      background-color: transparent;
+      position: static;
+      flex-direction: row;
+    }
+
+    ul {
+      justify-content: center;
+      align-items: center;
+      li {
+        a {
+          color: #fff;
+        }
+      }
+    }
+
+    .btn-close {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+
+    &.hidden {
+      display: none !important;
+      .btn-close {
+        display: none;
+      }
+    }
+
+    &.is-open {
+      display: block;
+      .btn-close {
+        display: block;
+      }
+    }
+  }
+}

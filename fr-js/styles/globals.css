@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    /*color-scheme: dark;*/
+  }
+  body {
+    /*color: white;*/
+    /*background: black;*/
+  }
+}
+
+.filter-text {
+  color: #000;
+}
+
+.datatable-filter-demo .p-paginator .p-paginator-current {
+  margin-left: auto;
+}
+.datatable-filter-demo .p-progressbar {
+  height: 0.5rem;
+  background-color: #d8dadc;
+}
+.datatable-filter-demo .p-progressbar .p-progressbar-value {
+  background-color: #607d8b;
+}
+.datatable-filter-demo .p-datepicker {
+  min-width: 25rem;
+}
+.datatable-filter-demo .p-datepicker td {
+  font-weight: 400;
+}
+.datatable-filter-demo .p-datatable.p-datatable-customers .p-datatable-header {
+  padding: 1rem;
+  text-align: left;
+  font-size: 1.5rem;
+}
+.datatable-filter-demo .p-datatable.p-datatable-customers .p-paginator {
+  padding: 1rem;
+}
+.datatable-filter-demo
+  .p-datatable.p-datatable-customers
+  .p-datatable-thead
+  > tr
+  > th {
+  text-align: left;
+}
+.datatable-filter-demo
+  .p-datatable.p-datatable-customers
+  .p-datatable-tbody
+  > tr
+  > td {
+  cursor: auto;
+}
+.datatable-filter-demo
+  .p-datatable.p-datatable-customers
+  .p-dropdown-label:not(.p-placeholder) {
+  text-transform: uppercase;
+}
+
+.p-datatable .p-datatable-header > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between !important;
+}
+
+.header a {
+  color: #fff;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  border: 1px solid #eaeaea;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pagination li:not(.previous):not(.next) {
+  border: 1px solid #eaeaea;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.pagination li.selected {
+  background-color: #1f2937;
+  color: #fff;
+}
+.thead-item {
+  position: relative;
+}
+.thead-item.asc:before {
+  content: "⇣";
+
+  position: absolute;
+  left: 0;
+  top: 10px;
+  font-size: 25px;
+}
+
+.thead-item.desc:before {
+  content: "⇡";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  font-size: 25px;
+}
